@@ -13,12 +13,15 @@ document.querySelector("#output-box");
 
 function compareValue(sum,luckyNumber)
 {
+    if (luckyNumber == 0 || luckyNumber <0 || luckyNumber == " "){
+        outputBox.innerText = "please enter valid lucky number";
+    } else {
     if(sum%luckyNumber==0) {
         outputBox.innerText="your birthday is lucky 🥳";
     }else {
         outputBox.innerText="your birthday is not lucky";
 
-    }
+    }}
 }
 
 function checkBirthDteIsLucky(){
